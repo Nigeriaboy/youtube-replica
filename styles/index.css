@@ -1,8 +1,10 @@
 /** General Desgin Starts Here**/
 
 body {
-    font-family: Roboto, "Arial";
+    font-family: Roboto, Arial;
     margin: 0;
+    padding-bottom: 300px;
+    background-color: rgb(248, 248, 248);
 }
 
 /** General Design Ends Here**/
@@ -12,40 +14,44 @@ body {
 header {
     display: flex;
     padding: 10px 0px;
-    border: 1px solid;
+    background-color: white;
+    border-bottom: 1px solid rgb(226, 226, 226);
     justify-content: space-between;
+    position: fixed;
+    width: 100%;
+    z-index: 30;
 }
 
 header img {
-    height: 25px;
+    height: 24px;
 }
 
 .left-section, .middle-section, .right-section {
     display: flex;
     align-items: center;
-    flex: 1;
+
 }
 
 .left-section {
-    padding-left: 20px;
-    padding-right: 50px;
+    padding-left: 25px;
+    padding-right: 70px;
 }
 
 .youtube-logo {
-    margin-left: 20px;
+    margin-left: 30px;
     height: 20px;
 }
 
 .middle-section {
-    border: 1px solids;
     margin-right: 50px;
     max-width: 500px;
+    flex: 1;
 }
 
 .middle-section input {
     width: 0px;
     flex: 1;
-    height: 40px;
+    height: 38px;
     padding-left: 10px;
     outline: none;
     border-top-left-radius: 2px;
@@ -65,7 +71,7 @@ header img {
 }
 
 .search-icon {
-    height: 44px;
+    height: 42px;
     width: 70px;
     border: 1px solid;
     border-top-left-radius: 0px;
@@ -79,7 +85,7 @@ header img {
 
 .voice-search-icon {
     border-radius: 500px;
-    height: 44px;
+    height: 45px;
     width: 44px;
     margin-left: 15px;
     border: none;
@@ -87,8 +93,147 @@ header img {
 }
 
 .right-section {
-    border: 1px solid;
+    display: flex;
+    justify-content: space-between;
+    width: 190px;
+    padding-right: 20px;
+    flex-shrink: 0;
 }
 
+
+.profile-pics {
+    width: 35px;
+    height: 35px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.notification-container {
+    position: relative;
+}
+
+.notifications-icon {
+    height: 27px;
+}
+
+.notification-count {
+    position: absolute;
+    font-size: 11px;
+    top: 0;
+    right: 0;
+    background-color: rgb(191, 18, 18);
+    color: white;
+    border: 2px solid white;
+    width: 11px;
+    height: 14px;
+    text-align: center;
+    border-radius: 20px;
+    padding: 3px 2px 2px 2px;
+    margin-right: -5px;
+    margin-top: -2px;
+}
 /** Header Design Ends Here**/
+
+/** Left-side-bar Design Starts Here**/
+
+.left-side-bar {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    width: 80px;
+    bottom: 0;
+    top: 65px;
+    z-index: 50;
+}
+
+.left-side-bar img {
+    height: 24px;
+    margin-top: 10px;
+}
+
+.left-side-bar .section {
+    max-height: 88px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 0;
+    justify-content: center;
+    align-items: center;
+    padding: 7px 0px 7px 0px;
+}
+
+.left-side-bar .section:hover {
+    background-color: rgb(231, 231, 231);
+}
+
+.left-side-bar p {
+    font-size: 10px;
+}
+
+.home {
+    margin-top: 5px;
+}
+
+/** Left-side-bar Design Ends Here**/
+
+/** Video Grid Design Starts Here **/
+
+.video-grid {
+    padding-top: 90px;
+    padding-left: 110px;
+    padding-right: 20px;
+    font-weight: 400;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 30px;
+    column-gap: 20px;
+}
+
+.video-pic {
+    width: 100%;
+}
+
+.video-card {
+    width: 100%;
+    position: relative;
+}
+
+.video-info {
+    display: grid;
+    grid-template-columns: 50px 1fr;
+    margin-top: 15px;
+}
+
+.channel-pic {
+    width: 38px;
+    border-radius: 30px;
+}
+
+
+.video-title {
+    font-size: 15px;
+    line-height: 20px;
+    margin-bottom: 10px;
+}
+
+.channel-name , .video-stat {
+    font-size: 13px;
+    color: rgb(98, 98, 98);
+    margin-bottom: 7px;
+}
+
+.video-pic-and-time {
+    position: relative;
+}
+
+.video-time {
+    position: absolute;
+    bottom: 12px;
+    right: 5px;
+    font-size: 12px;
+    color: white;
+    background-color: black;
+    padding: 5px 6px 5px 6px;
+}
+/** Video Grid Design Ends Here **/
 
