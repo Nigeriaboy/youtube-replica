@@ -184,9 +184,9 @@ header img {
     padding-right: 20px;
     font-weight: 400;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     row-gap: 30px;
-    column-gap: 20px;
+    column-gap: 15px;
 }
 
 .video-pic {
@@ -211,7 +211,7 @@ header img {
 
 
 .video-title {
-    font-size: 15px;
+    font-size: 14px;
     line-height: 20px;
     margin-bottom: 10px;
 }
@@ -234,6 +234,18 @@ header img {
     color: white;
     background-color: black;
     padding: 5px 6px 5px 6px;
+}
+
+@media (max-width: 1125px) {
+    .video-grid {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media (max-width: 869px) {
+    .video-grid {
+        grid-template-columns: 1fr 1fr;
+    }
 }
 /** Video Grid Design Ends Here **/
 
